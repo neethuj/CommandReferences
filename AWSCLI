@@ -1,0 +1,9 @@
+# Create EC2 instance
+aws ec2 run-instances --image-id ami-0a606d8395a538502 --count 1 --instance-type t2.micro --key-name MySSHKey --security-group-ids sg-04085e1e38be80f5c --subnet-id subnet-0520ab414418fad47 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=MyFirstEC2Public}]'
+
+
+# Delete S3 bucket
+aws s3 rb s3://<bucketname>
+
+# List S3 bucket
+aws s3 ls
