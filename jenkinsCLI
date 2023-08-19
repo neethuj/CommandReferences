@@ -1,0 +1,23 @@
+# List of available commands
+java -jar jenkins-cli.jar -s http://localhost:8085 -auth 'admin:Adm!n321' help
+
+# Install OR update a plugin to latest
+java -jar jenkins-cli.jar -s http://localhost:8085 -auth 'admin:Adm!n321' list-plugins
+java -jar jenkins-cli.jar -s http://localhost:8085 -auth 'admin:Adm!n321' install-plugin cloudbees-bitbucket-branch-source
+
+# Disable a Plugin
+java -jar jenkins-cli.jar -s http://localhost:8085 -auth 'admin:Adm!n321' disable-plugin github
+
+# Restart Jenkins service
+sudo service jenkins restart
+sudo systemctl restart jenkins
+
+# Enable Jenkins Service
+sudo systemctl enable jenkins
+
+# Update Service Configuration (Do this after updating the service config file, for the config changes to reflect)
+sudo systemctl daemon-reload
+
+# Check Jenkins Service Status
+sudo systemctl status jenkins
+sudo service jenkins status
