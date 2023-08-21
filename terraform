@@ -1,0 +1,17 @@
+# Initialize a tf repo/.project
+terraform init (plugins, providers, and any dependent modules are downloaded to working directory)
+
+# Plan the execution
+terraform plan
+
+# Validate the code
+terraform validate
+
+# Format the code
+terraform fmt
+
+# Apply the changes
+terraform apply
+
+# Modules: Creating reusable code
+# Backend - where statefiles are stored (local, s3 etc)
