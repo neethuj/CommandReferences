@@ -1,0 +1,39 @@
+# Cloning a repo
+git clone <url>
+
+# Initialize repo locally
+git init
+
+# add new files to commit
+git add <fileename>
+git add .
+git add --all
+
+# Commit a change
+git commit -m "commit message"
+
+# Push changes to remote/origin
+git push
+git push -u origin <branchname>
+
+# Pull changes from remote
+git pull
+git fetch 
+
+# Show the changes in local repo yet to be added for commit.
+git diff
+
+# Show branch
+git branch
+
+# checkout a branch
+git checkout <branch_name> --> check out an existing branch
+git checkout -b <branch_name> --> create a new branch and checkout
+
+# Merge changes from another branch or remote
+git merge <branch_name>
+git pull 
+
+# Pull Request: Create request to merge changes from one branch to another, usually from feature branch to main/master
+
+
