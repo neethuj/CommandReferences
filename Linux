@@ -1,0 +1,75 @@
+# Running processes
+ps -ef
+ps -ef | grep <process_name OR pid>
+
+# CPU/memory usage
+top
+
+# Memory utilization
+free
+
+# File systems
+df
+df -h (to display size in GB)
+
+# Disk utilization
+du
+
+# ports used by processes
+netstat -napt
+
+# current user
+id
+
+#List of user
+cat /etc/passwd
+
+# Cronjob (scheduled jobs)
+crontab -l (list of jobs)
+crontab -e (editor for adding/editing cronjobs)
+
+# Find and replace in a string
+sed
+sed 's/<stringA>/<stringB>/g' (replace string A with String B)
+
+# Network commands
+ping <IP> --- to check if a remote IP is reachable
+telnet <ip> <port> -- to check if a port of the specified machine/ip is reachable
+
+# Directory/Files
+touch
+mkdir
+mkdir -p (created entire directory tree)
+ls
+ls -l, ls -lart
+cp, cp -r
+mv
+rm -rf (recursive, and force).. "r" should be used for directories.
+cd (home direcory)
+cd . (current)
+cd .. (parent)
+cd - (previous)
+cd / (root)
+cd ~ (home)
+chmod xxx (rwx)
+chown
+pwd
+
+
+# execute a binary from anywhere
+add binary absolute path to PATH env variable
+. bash_profile, .profile (executed when you login)
+
+# Environment variable
+env --> display
+export VARIABLE=value --> Set env variable in current session
+add "export VARIABLE=value" to ~/.profile or ~/.bash_profile --> permanant env variable available in all sessions
+
+# File Content
+less, more, cat --> read file contents
+vi, vim, nano --> edit
+
+# search, filter, sort, extract
+grep
+sort
+wc (word count) -- wc -l, wc -c, 
