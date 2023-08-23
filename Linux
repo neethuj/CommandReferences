@@ -73,3 +73,9 @@ vi, vim, nano --> edit
 grep
 sort
 wc (word count) -- wc -l, wc -c, 
+
+# Run commands with root privilege
+sudo <command>
+
+# login as root from other user session
+sudo -i (will prompt for password)
