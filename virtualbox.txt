@@ -1,0 +1,10 @@
+VBoxManage.exe list vms
+
+VBoxHeadless -startvm Ubuntu-VM1 --vrdp on &
+
+VBoxManage.exe list runningvms
+
+VBoxManage.exe controlvm Ubuntu-VM1 acpipowerbutton
+
+VBoxManage.exe controlvm Ubuntu-VM1 poweroff 
+
