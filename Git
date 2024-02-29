@@ -4,7 +4,7 @@ git clone <url>
 # Initialize repo locally
 git init
 
-# add new files to commit
+# add new files to commit 
 git add <fileename>
 git add .
 git add --all
